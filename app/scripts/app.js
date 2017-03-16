@@ -8,7 +8,7 @@
          
      $stateProvider
          .state('mainView', {
-             url: '/mainView',
+             url: '/',
              controller: 'MainCtrl as main',
              templateUrl: '/pages/main.html'
          });
