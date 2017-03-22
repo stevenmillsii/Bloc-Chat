@@ -1,0 +1,52 @@
+*, *::before, *::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	background-color: white;
+	background-size: cover;
+	font-family: 'Space Mono', monospace;
+	min-height: 100%;
+}
+
+.name {
+	color: grey;
+}
+
+.header {
+	border-bottom: 2px solid grey;
+}
+
+.name {
+	padding-top: 10px;
+}
+
+.side-bar {
+	border-style: solid;
+	border-color: grey;
+	
+}
+
+.ion-plus {
+	color: grey;
+}
+
+.chat-room-name {
+	color: grey;
+}
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background-color: grey;
+}
