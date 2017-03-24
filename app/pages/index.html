@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/chat-room.css">
 </head>
 
-<body ng-controller="ChatRoomCtrl">
+<body>
 	<div class="header">
 		<h1 class="name">bloc chat</h1>
 		<span class="block"></span>
@@ -26,12 +26,11 @@
 		<li class="add-chat-room">
 			<a class="add-chat-room-button"><span class="ion-plus"></span></a>
 		</li>
-		<li class="chat-room-name">room 1</li>
+		<li class="chat-room-name" ng-repeat=""></li>
 	</ul>
 	
 	<span class="footer"></span>
 	
-	<ui-view></ui-view>
 	
 	
 	<!--Angular-->

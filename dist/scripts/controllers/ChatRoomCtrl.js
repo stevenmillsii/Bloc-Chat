@@ -5,5 +5,5 @@
 	
 	angular
 		.module('blocChat')
-		.controller('ChatRoomCtrl', ChatRoomCtrl);
+		.controller('ChatRoomCtrl', ['Room', ChatRoomCtrl]);
 })();

@@ -7,7 +7,7 @@
          });
          
      $stateProvider
-         .state('mainView', {
+         .state('chatRoom', {
              url: '/',
              controller: 'ChatRoomCtrl',
              templateUrl: '/templates/chat-room.html'
