@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/chat-room.css">
 </head>
 
-<body>
+<body ng-controller="ChatRoomCtrl">
 	<div class="header">
 		<h1 class="name">bloc chat</h1>
 		<span class="block"></span>
@@ -30,6 +30,8 @@
 	</ul>
 	
 	<span class="footer"></span>
+	
+	<ui-view></ui-view>
 	
 	
 	<!--Angular-->
@@ -53,10 +55,12 @@
 	  };
 	  firebase.initializeApp(config);
 	</script>
+	<script src="/scripts/factory/Room.js"></script>
 	<script src="/scripts/app.js"></script>
 	<script src="/scripts/controllers/AddRoomCtrl.js"></script>
 	<script src="/scripts/controllers/AddUserCtrl.js"></script>
 	<script src="/scripts/controllers/ChatRoomCtrl.js"></script>
+
 	
 </body>
 </html>
