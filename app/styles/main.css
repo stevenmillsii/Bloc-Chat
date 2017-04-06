@@ -30,9 +30,10 @@ body {
 }
 
 .side-bar {
-	position: absolute;
+	float: left;
 	height: 100%;
-	padding-left: 100px;
+	width: 100px;
+	padding: 10px;
 	border-right: 2px solid grey;
 }
 

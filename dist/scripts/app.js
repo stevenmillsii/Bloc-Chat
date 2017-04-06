@@ -9,7 +9,7 @@
      $stateProvider
          .state('chatRoom', {
              url: '/',
-             controller: 'ChatRoomCtrl',
+             controller: 'ChatRoomCtrl as main',
              templateUrl: '/templates/chat-room.html'
          });
      }

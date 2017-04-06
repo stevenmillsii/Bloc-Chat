@@ -1,6 +1,6 @@
 (function() {
-	function ChatRoomCtrl() {
-
+	function ChatRoomCtrl(Room) {
+		this.rooms = Room.all;
 	}
 	
 	angular
