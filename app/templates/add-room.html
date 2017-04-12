@@ -1,5 +1,15 @@
-<input type="text" name="" placeholder="Create Room"/>
-
-<a class="confirm-room"><span class="ion-checkmark"></span></a>
-
-<a class="cancel-room"><span class="ion-close"></span></a>
+<div class="modal-header">
+	<h3 class="modal-title" id="modal-title">Add Chat Room</h3>
+</div>
+<div class="modal-body" id="modal-body">
+	<ul>
+		<li ng-repeat="item in $ctrl.items">
+			<a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
+		</li>
+	</ul>
+	Selected: <b>{{ $ctrl.selected.item }}</b>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Add Room</button>
+	<button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>
