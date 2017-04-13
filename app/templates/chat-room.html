@@ -1,7 +1,7 @@
 <div class="side-bar">
 <ul class="chat-room-list">
 	<li class="add-chat-room">
-		<a class="add-chat-room-button"><span class="ion-plus"></span></a>
+		<a class="add-chat-room-button" ng-click="main.open()"><span class="ion-plus"></span></a>
 	</li>
 	<li class="chat-room-name" ng-repeat="room in main.rooms"> {{ room.name }}</li>
 </ul>
