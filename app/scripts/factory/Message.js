@@ -5,7 +5,7 @@
 		
 		return {
 			getByRoomId: function (roomId) {
-				
+				equalTo(messages, 1);	
 			}
 		};
 	}
