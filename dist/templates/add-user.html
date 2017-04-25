@@ -1,3 +1,5 @@
 <input type="text" name="" placeholder="Create User"/>
 
-<a class="confirm-user"><span class="ion-checkmark"></span></a>
+<a class="confirm-user" ng-click="ok(currentUser)">
+	<span class="ion-checkmark"> {{ warning }} </span>
+</a>
