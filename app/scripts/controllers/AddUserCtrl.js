@@ -1,9 +1,12 @@
 (function() {
-	function AddUserCtrl() {
-
+	function AddUserCtrl($uibModalInstance, $scope) {
+		$scope.ok = function(currentUser) {
+			$cookies.put('blocChatCurrentUser', currentUser);
+			$uibModalInstance.close('ok');
+		};
 	}
 	
 	angular
 		.module('blocChat')
-		.controller('AddUserCtrl', AddUserCtrl);
+		.controller('AddUserCtrl', ['$uibModalInstance', '$scope', AddUserCtrl]);
 })();
