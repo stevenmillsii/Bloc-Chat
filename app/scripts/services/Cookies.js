@@ -4,7 +4,8 @@
 		if (!currentUser || currentUser === '') {
 			$uibModal.open({
              controller: 'AddUserCtrl as AddUser',
-             templateUrl: '/templates/add-user.html'
+             templateUrl: '/templates/add-user.html',
+			 backdrop: 'static'
 			}) 
 		}
 		
