@@ -6,6 +6,14 @@
 		return {
 			getByRoomId: function (roomId) {
 				return $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));	
+			},
+			
+			send: function(newMessage) {
+				messages.$add({content: newMessage,
+							   author: currentUser,
+							   roomId: currentRoom,
+							   sentAt:
+							  });
 			}
 		};
 	}
