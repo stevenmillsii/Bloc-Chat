@@ -13,9 +13,7 @@
 <ul>
 	<li class="messages" ng-repeat="message in messages"> {{ message.author }} : {{ message.content }}</li>
 </ul>
-
-<input type="text" name="" placeholder="Type Response"/>
-
-<a class="confirm-message" ng-click=""><span class="ion-checkmark"></span></a>
-
-<a class="cancel-message" ng-click=""><span class="ion-close"></span></a>
+<form ng-submit="sendMessage(message)">
+<input type="text" name="" placeholder="Type Response" ng-model="message"/>
+<button class="confirm-message" ng-click=""><span class="ion-checkmark"></span></button>
+</form>

@@ -13,7 +13,7 @@
 				messages.$add({content: newMessage,
 							   author: currentUser,
 							   roomId: currentRoom,
-							   sentAt: sentAt.push({firebase.database.ServerValue.timeStamp});
+							   sentAt: firebase.database.ServerValue.TIMESTAMP
 							  });
 			}
 		};
